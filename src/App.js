@@ -2,14 +2,15 @@ import BottomBar from "./components/BottomBar";
 import TopBar from "./components/TopBar";
 import Content from "./components/Content";
 import SideBar from "./components/SideBar";
-import QuantityBar from "./components/QuantityBar"
+import QuantityBar from "./components/QuantityBar";
+import FeedBack from "./components/FeedBack";
 
 function App() {
   return (
     <div className="h-screen overflow-y-scroll font-serif">
       <TopBar />
       <Content />
-      <div className="h-[520px] w-[full] relative">
+      <div className="h-[520px] w-full relative">
         <img src="https://cdn.shopify.com/s/files/1/0513/6164/4711/files/MysteryFootball_New_Year_Banner_v3.jpg?v=1672997833&width=max" />
         <div className="w-full h-full absolute inset-0 flex items-center justify-center">
           <button className="w-[128px] h-[49px] outline-none outline-white outline-[1px] hover:outline-[2.5px] text-white">
@@ -36,7 +37,7 @@ function App() {
                 <div>
                   <a className="hover:underline" href="#">
                     <img src="https://cdn.shopify.com/s/files/1/0513/6164/4711/products/MysteryBox2_07a65112-6135-426d-86d5-f4da8908c430.png?v=1665140228&width=360" />
-                    Mystery Football Shirt Box
+                    National Mystery Football Shirt Box
                   </a>
                 </div>
                 <div className="text-base py-2">★★★★★(24)</div>
@@ -46,7 +47,7 @@ function App() {
                 <div>
                   <a className="hover:underline" href="#">
                     <img src="https://cdn.shopify.com/s/files/1/0513/6164/4711/products/MysteryBox2_07a65112-6135-426d-86d5-f4da8908c430.png?v=1665140228&width=360" />
-                    Mystery Football Shirt Box
+                    Kids Mystery Football Shirt Box
                   </a>
                 </div>
                 <div className="text-base py-2">★★★★★(70)</div>
@@ -56,7 +57,7 @@ function App() {
                 <div>
                   <a className="hover:underline" href="#">
                     <img src="https://cdn.shopify.com/s/files/1/0513/6164/4711/products/MysteryBox2_07a65112-6135-426d-86d5-f4da8908c430.png?v=1665140228&width=360" />
-                    Mystery Football Shirt Box
+                    2022/23 Mystery Football Shirt Box
                   </a>
                 </div>
                 <div className="text-base py-2">★★★★★(13)</div>
@@ -119,14 +120,141 @@ function App() {
               </div>
               <SideBar />
               <QuantityBar />
-              <div className="w-[431px] h-[49px] my-4">
-              <button type="button" className="hover:w-[434px] hover:h-[51px] hover:border-black w-full h-full bg-black text-white flex items-center justify-center text-[18px]">Add to cart
-              </button>
+              <div className="w-[431px] h-auto">
+                <div className="w-[431px] h-[49px] my-4">
+                  <button
+                    type="button"
+                    className="hover:w-[434px] hover:h-[51px] hover:border-black w-full h-full bg-black text-white flex items-center justify-center text-[18px]"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div className="flex items-center justify-center py-4">
+                  <a
+                    href="#"
+                    className="underline underline-offset-4 text-[14px]"
+                  >
+                    More payment options
+                  </a>
+                </div>
+                <div className="grid grid-flow-col grid-rows-1 py-4">
+                  <div className="flex items-start justify-start">
+                    <a
+                      href="#"
+                      className="hover:underline hover:underline-offset-4"
+                    >
+                      {" "}
+                      Share{" "}
+                    </a>{" "}
+                  </div>
+                  <div className="flex items-end justify-end">
+                    <a
+                      href="#"
+                      className="hover:underline hover:underline-offset-4"
+                    >
+                      View full details
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="w-full h-[299px] py-2">
+        <ul className="flex items-center justify-center gap-x-1">
+          <li>
+            <img
+              className="h-[298px] w-[298px] object-cover object-center"
+              src="https://static.zegsu.com/user-data/instagenie/70f06a3e2854ed59517821e95e588a8a9545c586.webp"
+            />
+          </li>
+          <li>
+            <img
+              className="h-[298px] w-[298px] object-cover object-center"
+              src="https://static.zegsu.com/user-data/instagenie/2a5d893fc775985c977d08260e0bfe456bd26895.webp"
+            />
+          </li>
+          <li>
+            <img
+              class="h-[298px] w-[298px] object-cover object-center"
+              src="https://static.zegsu.com/user-data/instagenie/777acf2d5cce71a0461ba8bb1c05cfdac08aeb0d.webp"
+            />
+          </li>
+          <li>
+            <img
+              className="h-[298px] w-[298px] object-cover object-center"
+              src="https://static.zegsu.com/user-data/instagenie/94203f3a44162be11a1239571a6e1a97effbb56c.webp"
+            />
+          </li>
+          <li>
+            <img
+              className="h-[298px] w-[298px] object-cover object-center"
+              src="https://static.zegsu.com/user-data/instagenie/7fd411296b66d0f30082543c43b7e990a6d46f55.webp"
+            />
+          </li>
+        </ul>
+      </div>
+      <div className="py-4">
+        <div className="relative">
+          <img
+            className="h-[756px] w-[1520px] object-cover object-center"
+            src="https://cdn.shopify.com/s/files/1/0513/6164/4711/files/Warehouse.png?v=1675168682&width=max"
+          />
+          <div className="w-full h-full absolute inset-0 flex items-center justify-center">
+            <div className="grid grid-flow-row grid-cols-1 gap-y-4">
+              <p className="text-white text-[24px]">
+                THE MOST EXCITING WAY TO BUILD A
+              </p>
+              <p className="text-center text-white text-[24px]">
+                FOOTBALL SHIRT COLLECTION
+              </p>
+              <div className="flex items-center justify-center">
+                <button className="text-white text-[18px] w-[128px] h-[49px] outline-none outline-white outline-[1px] hover:outline-[2.5px]">
+                  SHOP
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center justify-center text-[34px] py-4">
+        What do our customers think?
+      </div>
+      <div className="text-center text-[16px] py-4 text-gray-500">
+        <p>
+          Explore all of our customer reviews and take a glimpse at the types of
+          shirts you will be receiving in your
+        </p>
+        <p>very own Mystery Football Shirt box...</p>
+      </div>
+      <div className="flex tems-center justify-center py-10">
+        <FeedBack
+          name="Mehmet G."
+          imgSrc="https://pbs.twimg.com/profile_images/1623637524173189120/cgkgKnbG_400x400.jpg"
+          feedbackStars="★★★★★"
+          feedbackText="Great product, would recommend to anyone!"
+        />
+        <FeedBack
+          name="Steve S."
+          imgSrc="https://images.loox.io/uploads/2022/7/3/E1OjQbs9n_mid.jpg"
+          feedbackStars="★★★★☆"
+          feedbackText="First time purchase for son’s 13th birthday. Before he opened the box, he already wanted to order another one!"
+        />
+        <FeedBack
+          name="Ben H."
+          imgSrc="https://images.loox.io/uploads/2022/6/25/V1Zl7Vl9n_mid.jpg"
+          feedbackStars="★★★★★"
+          feedbackText="Excellent service, prices, and delivery. Very impressed. Have recommended to plenty of mates"
+        />
+        <FeedBack
+          name="Joseph M."
+          imgSrc="https://images.loox.io/uploads/2022/5/20/NJdLbtlw3_mid.jpg"
+          feedbackStars="★★★★★"
+          feedbackText="Excellent service, prices, and delivery. Very impressed. Have recommended to plenty of mates"
+        />
+      </div>
+      <BottomBar />
     </div>
   );
 }
