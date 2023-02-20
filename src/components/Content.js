@@ -1,6 +1,15 @@
+import Home from "../pages/Home";
+import AboutUs from "../pages/AboutUs";
+import Delivery from "../pages/Delivery";
+import HowItWorks from "../pages/HowItWorks";
+import Products from "../pages/Products";
+import TopBar from "./TopBar";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function Content() {
   return (
-    <div>
+    <div className="h-screen">
+    <TopBar />
       <div className="flex justify-between items-center py-8">
         <div className="pl-44">
           <button>
@@ -55,24 +64,40 @@ function Content() {
       <div>
         <ul className="flex items-center justify-center space-x-4 py-3">
           <li className="no-underline hover:underline text-[14px] px-2">
-            <a href="#">Home</a>
+            <Link to="/home">Home</Link>
           </li>
           <li className="no-underline hover:underline text-[14px] px-2">
-            <a href="#">How It Works</a>
+            <Link to="/how-it-works">How It Works</Link>
           </li>
           <li className="no-underline hover:underline text-[14px] px-2">
-            <a href="#">Products</a>
+            <Link to="/products">Products</Link>
           </li>
           <li className="no-underline hover:underline text-[14px] px-2">
-            <a href="#">About Us</a>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li className="no-underline hover:underline text-[14px] px-2">
-            <a href="#">Delivery</a>
+            <Link to="/delivery">Delivery</Link>
           </li>
         </ul>
       </div>
+      <Switch>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route path="/how-it-works">
+          <HowItWorks />
+        </Route>
+        <Route path="/products">
+          <Products />
+        </Route>
+        <Route path="/about-us">
+          <AboutUs />
+        </Route>
+        <Route path="/delivery">
+          <Delivery />
+        </Route>
+      </Switch>
     </div>
   );
 }
-
 export default Content;
