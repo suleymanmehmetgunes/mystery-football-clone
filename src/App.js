@@ -11,25 +11,7 @@ function App() {
   return (
     <div className="h-screen font-sans">
       <Router>
-        <Content>
-          <Switch>
-            <Route exact path="/home">
-              <Home />
-            </Route>
-            <Route path="/how-it-works">
-              <HowItWorks />
-            </Route>
-            <Route path="/products">
-              <Products />
-            </Route>
-            <Route path="/about-us">
-              <AboutUs />
-            </Route>
-            <Route path="/delivery">
-              <Delivery />
-            </Route>
-          </Switch>
-        </Content>
+        <Content />
       </Router>
     </div>
   );
